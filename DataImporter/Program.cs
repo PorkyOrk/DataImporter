@@ -5,19 +5,33 @@ Console.WriteLine("Program started");
 var importDirectory = Directory.GetCurrentDirectory() + "\\ImportFiLes";
 var fileNames = Directory.GetFiles(importDirectory);
 
-var imported = new List<List<string>>();
+
+var result = CsvImporter.ReadCsvFile(fileNames[0]); 
 
 
-// foreach (var fileName in fileNames)
-// {
-//     Console.WriteLine($"Importing from file: {fileName}");
-//
-//     var importedCsv = CsvImporter.LoadFromFile(fileName);
-//     imported.Add(importedCsv);
-// }
 
 
-var result = CsvImporter.ReadCsvFile(fileNames[3]);
+// Print in console in a slightly fancy way
+var separator = " | ";
+
+var header = separator;
+foreach (var c in result.Columns)
+{
+    header += c + separator;
+}
+Console.WriteLine(header);
+
+foreach (var vals in result.Values)
+{
+    var line = separator;
+    foreach (var v in vals)
+    {
+        line += v + separator;
+    }
+    Console.WriteLine(line);
+}
 
 
+
+// Keep console open until user input
 Console.ReadLine();
