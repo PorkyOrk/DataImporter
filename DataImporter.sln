@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter", "DataImporter\DataImporter.csproj", "{EF313A68-2CE1-4838-9480-253C94BD5564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Csv", "DataImporter.Csv\DataImporter.Csv.csproj", "{3CA15B6E-D609-45E1-B3AC-18C47FA16E7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF313A68-2CE1-4838-9480-253C94BD5564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF313A68-2CE1-4838-9480-253C94BD5564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF313A68-2CE1-4838-9480-253C94BD5564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF313A68-2CE1-4838-9480-253C94BD5564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA15B6E-D609-45E1-B3AC-18C47FA16E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA15B6E-D609-45E1-B3AC-18C47FA16E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA15B6E-D609-45E1-B3AC-18C47FA16E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA15B6E-D609-45E1-B3AC-18C47FA16E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
